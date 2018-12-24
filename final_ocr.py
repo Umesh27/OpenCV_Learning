@@ -6,10 +6,10 @@ from imutils.perspective import four_point_transform
 import numpy as np
 import ocr_template_match
 
-refImagePath = r"Digits\\refFont.png"
+refImagePath = r"images\\refFont.png"
 digits = ocr_template_match.get_refDigits(refImagePath)
 
-imagePath = r"Images\\test2.jpg"
+imagePath = r"images\\test2.jpg"
 image = cv2.imread(imagePath)
 image = imutils.resize(image, height=500)
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
